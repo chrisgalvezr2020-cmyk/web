@@ -1,0 +1,294 @@
+/* Estilos para la página de Enfermedades - COMPLETO con header y footer */
+
+/* HEADER - Idéntico a todas las páginas */
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* Estilo para página activa */
+nav a[href*="enfermedades.html"] {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilos para las enfermedades */
+.enfermedad {
+    background: #f8f9fa;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.enfermedad:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.enfermedad h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.enfermedad h3::before {
+    font-size: 1.2rem;
+}
+
+.enfermedad h4 {
+    color: #34495e;
+    margin: 1.5rem 0 0.8rem 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.3rem;
+}
+
+.enfermedad p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.enfermedad ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.enfermedad li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.enfermedad li:before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+.enfermedad li:last-child {
+    border-bottom: none;
+}
+
+.enfermedad strong {
+    color: #2c3e50;
+}
+
+/* Colores específicos para cada enfermedad */
+.enfermedad:nth-child(1) {
+    border-left-color: #e74c3c; /* Osteoporosis */
+}
+
+.enfermedad:nth-child(2) {
+    border-left-color: #3498db; /* Osteoartritis */
+}
+
+.enfermedad:nth-child(3) {
+    border-left-color: #9b59b6; /* Escoliosis */
+}
+
+.enfermedad:nth-child(4) {
+    border-left-color: #e67e22; /* Osteomielitis */
+}
+
+.enfermedad:nth-child(5) {
+    border-left-color: #1abc9c; /* Paget */
+}
+
+/* Iconos para cada enfermedad */
+.enfermedad:nth-child(1) h3::before { content: "🦴"; } /* Osteoporosis */
+.enfermedad:nth-child(2) h3::before { content: "🦵"; } /* Osteoartritis */
+.enfermedad:nth-child(3) h3::before { content: "📐"; } /* Escoliosis */
+.enfermedad:nth-child(4) h3::before { content: "🦠"; } /* Osteomielitis */
+.enfermedad:nth-child(5) h3::before { content: "🔍"; } /* Paget */
+
+/* FOOTER - Idéntico a todas las páginas */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ANIMACIONES */
+section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.enfermedad {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animaciones escalonadas para enfermedades */
+.enfermedad:nth-child(1) { animation-delay: 0.1s; }
+.enfermedad:nth-child(2) { animation-delay: 0.2s; }
+.enfermedad:nth-child(3) { animation-delay: 0.3s; }
+.enfermedad:nth-child(4) { animation-delay: 0.4s; }
+.enfermedad:nth-child(5) { animation-delay: 0.5s; }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .enfermedad {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .enfermedad h3 {
+        font-size: 1.3rem;
+    }
+    
+    .enfermedad h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin: 1rem auto;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .enfermedad {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .enfermedad h3 {
+        font-size: 1.2rem;
+    }
+    
+    .enfermedad h4 {
+        font-size: 1rem;
+    }
+    
+    .enfermedad li {
+        padding-left: 1.5rem;
+    }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+a:focus, button:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.enfermedad:focus-within {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
