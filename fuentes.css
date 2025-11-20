@@ -1,0 +1,369 @@
+/* RESET Y TIPOGRAFÍA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+/* HEADER - Idéntico a todas las páginas */
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: normal;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    text-transform: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: normal;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 1rem;
+    text-transform: none;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* Estilo para página activa */
+nav a[href*="fuentes.html"] {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* MAIN CONTENT - Igual que index.html */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilos para las fuentes bibliográficas - Igual que .divisiones en index.html */
+.fuentes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fuente {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: transform 0.3s ease;
+    text-align: center;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.fuente:hover {
+    transform: translateY(-5px);
+}
+
+.fuente h3 {
+    color: #34495e;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Colores específicos para cada tipo de fuente - Igual que en index.html */
+.fuente:nth-child(1) {
+    border-left-color: #e74c3c; /* Libros de Texto */
+}
+
+.fuente:nth-child(2) {
+    border-left-color: #3498db; /* Artículos Científicos */
+}
+
+.fuente:nth-child(3) {
+    border-left-color: #9b59b6; /* Recursos en Línea */
+}
+
+.fuente:nth-child(4) {
+    border-left-color: #1abc9c; /* Recursos Educativos */
+}
+
+/* Estilos específicos para referencias ISO 690 - Manteniendo la funcionalidad */
+.referencias-iso {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.referencias-iso li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+    padding-left: 0;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 0.95rem;
+}
+
+.referencias-iso li:last-child {
+    border-bottom: none;
+}
+
+/* Eliminar los iconos anteriores para las listas ISO */
+.referencias-iso li:before {
+    display: none;
+}
+
+/* Estilos para enlaces en formato ISO 690 - Integrados con el diseño */
+.referencias-iso a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    border-bottom: 1px dotted #3498db;
+    padding: 0.1rem 0.2rem;
+    display: inline;
+    margin: 0 0.1rem;
+    cursor: pointer;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.referencias-iso a:hover {
+    color: #2980b9;
+    background-color: #ebf5fb;
+    border-bottom: 1px solid #2980b9;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.referencias-iso a:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+    background-color: #ebf5fb;
+}
+
+/* Estilos específicos para diferentes tipos de enlaces ISO */
+.referencias-iso a[href*="doi.org"],
+.referencias-iso a[href*="dx.doi.org"] {
+    color: #27ae60;
+    border-bottom-color: #27ae60;
+}
+
+.referencias-iso a[href*="isbn"] {
+    color: #e67e22;
+    border-bottom-color: #e67e22;
+}
+
+.referencias-iso a[href^="http"]:not([href*="doi"]):not([href*="isbn"]) {
+    font-family: 'Courier New', Monaco, monospace;
+    font-size: 0.85em;
+    color: #8e44ad;
+    border-bottom-color: #9b59b6;
+}
+
+/* Indicadores visuales para enlaces ISO */
+.referencias-iso a[href^="http"]::after {
+    content: " 🔗";
+    font-size: 0.8em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.referencias-iso a[href^="http"]:hover::after {
+    opacity: 1;
+}
+
+/* Mejora para URLs largas en formato ISO */
+.referencias-iso a {
+    word-break: break-word;
+    hyphens: auto;
+    line-height: 1.4;
+}
+
+/* Estilo para el texto de las referencias ISO */
+.referencias-iso em {
+    font-style: italic;
+    color: #2c3e50;
+}
+
+/* FOOTER - Idéntico a todas las páginas */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ANIMACIONES - Igual que index.html */
+section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.fuente {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animaciones escalonadas para fuentes */
+.fuente:nth-child(1) { animation-delay: 0.1s; }
+.fuente:nth-child(2) { animation-delay: 0.2s; }
+.fuente:nth-child(3) { animation-delay: 0.3s; }
+.fuente:nth-child(4) { animation-delay: 0.4s; }
+
+/* RESPONSIVE DESIGN - Igual que index.html */
+@media (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .fuente {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .referencias-iso li {
+        font-size: 0.9rem;
+        padding: 0.8rem 0;
+    }
+    
+    .referencias-iso a {
+        padding: 0.15rem 0.25rem;
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin: 1rem auto;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .fuente {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .referencias-iso li {
+        font-size: 0.85rem;
+        padding: 0.7rem 0;
+    }
+    
+    .referencias-iso a {
+        padding: 0.2rem 0.3rem;
+        font-size: 0.8em;
+        display: inline-block;
+        margin: 0.1rem 0;
+    }
+    
+    .referencias-iso a[href^="http"]:not([href*="doi"]):not([href*="isbn"]) {
+        display: block;
+        margin: 0.3rem 0;
+        padding: 0.3rem 0.4rem;
+    }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+a:focus, button:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.fuente:focus-within {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}

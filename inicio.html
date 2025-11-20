@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Esquelético Humano</title>
+    <link rel="icon" href="planeta-tierra.png" type="image/x-icon">
+    <link rel="stylesheet" href="inicio.css">
+    <style>
+        /* Estilos adicionales para multimedia */
+        .multimedia-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+            justify-content: center;
+        }
+        
+        .video-section, .audio-section {
+            flex: 1;
+            min-width: 300px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .video-section h3, .audio-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* Relación 16:9 */
+            margin-bottom: 15px;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+        
+        .audio-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px 0;
+        }
+        
+        .descripcion-multimedia {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align:center">El Sistema Esquelético Humano</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Presentación</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="funciones.html">Funciones</a></li>
+                <li><a href="huesos.html">Tipos de Huesos</a></li>
+                <li><a href="enfermedades.html">Enfermedades</a></li>
+                <li><a href="fuentes.html">Fuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduccion">
+            <h2>Introducción al Sistema Esquelético</h2>
+            <div class="contenido-principal">
+                <img src="esqueleto-humano-1.jpg" alt="Esqueleto humano" class="imagen-destacada">
+                
+                <div class="texto-intro">
+                    <p>El sistema esquelético es una estructura compleja que forma el armazón del cuerpo humano. Está compuesto por 206 huesos en el adulto, aunque los recién nacidos tienen aproximadamente 300 huesos que se fusionan durante el desarrollo.</p>
+                    
+                    <p>Este sistema no solo proporciona soporte estructural al cuerpo, sino que también cumple funciones vitales como la protección de órganos internos, la producción de células sanguíneas y el almacenamiento de minerales.</p>
+                    
+                    <p>El estudio del sistema esquelético es fundamental para comprender la anatomía humana, la biomecánica del movimiento y las patologías que pueden afectar a nuestros huesos y articulaciones a lo largo de la vida.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Multimedia añadida -->
+        <section class="multimedia">
+            <h2>Recursos Multimedia</h2>
+            <div class="multimedia-container">
+                <div class="video-section">
+                    <h3>Video Educativo: El Sistema Esquelético</h3>
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/gpubx6z0550" 
+                            title="Video educativo sobre el sistema esquelético" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="descripcion-multimedia">
+                        Video educativo que explica la estructura y funciones del sistema esquelético humano.
+                    </p>
+                </div>
+                
+                <div class="audio-section">
+                    <h3>Audio Explicativo: Huesos y Articulaciones</h3>
+                    <div class="audio-container">
+                        <audio controls>
+                            <source src="huesos y articulaciones.mp3" type="audio/mpeg">
+                            <source src="audio-sistema-esqueletico.ogg" type="audio/ogg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    <p class="descripcion-multimedia">
+                        Audio explicativo sobre la composición de los huesos y el funcionamiento de las articulaciones.
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="division-esqueleto">
+            <h2>División del Esqueleto</h2>
+            <div class="divisiones">
+                <article class="division">
+                    <h3>Esqueleto Axial</h3>
+                    <p>Formado por 80 huesos que constituyen el eje del cuerpo, incluyendo el cráneo, la columna vertebral, las costillas y el esternón. Su función principal es proteger los órganos vitales.</p>
+                    <img src="estqueleto axial.jpg" alt="">
+                </article>
+                
+                <article class="division">
+                    <h3>Esqueleto Apendicular</h3>
+                    <p>Compuesto por 126 huesos que forman las extremidades y sus conexiones con el esqueleto axial. Incluye los huesos de los brazos, piernas, hombros y pelvis.</p>
+                    <img src="esqueleto apendicular.jpg" alt="">
+                </article>
+            </div>
+        </section>
+
+        <section class="caracteristicas">
+            <h2>Características Generales</h2>
+            <ul>
+                <li>Los huesos son órganos vivos que se renuevan constantemente</li>
+                <li>El tejido óseo está compuesto por células, fibras colágenas y sales minerales</li>
+                <li>El esqueleto representa aproximadamente el 20% del peso corporal</li>
+                <li>La médula ósea roja produce alrededor de 2.5 millones de glóbulos rojos por segundo</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Proyecto Sistema Esquelético. Todos los derechos reservados.</p>
+        <p>Referencias: <a href="fuentes.html">Ver fuentes bibliográficas</a></p>
+    </footer>
+</body>
+</html>

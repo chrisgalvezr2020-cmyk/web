@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - Sistema Esquelético</title>
+    <link rel="icon" href="planeta-tierra.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .a4-container {
+            width: 21cm;
+            min-height: 29.7cm;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 2cm;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .title-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 0 0 15px 0;
+            color: #555;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        section h2 {
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .presentacion-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .info-estudiante, .proyecto-descripcion {
+            flex: 1;
+        }
+
+        .info-estudiante p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .proyecto-descripcion h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .proyecto-descripcion p {
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .proyecto-descripcion ul {
+            padding-left: 20px;
+        }
+
+        .proyecto-descripcion li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        @media (max-width: 21cm) {
+            body {
+                padding: 10px;
+            }
+            
+            .a4-container {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            .logo {
+                margin: 10px 0;
+            }
+            
+            .presentacion-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a4-container">
+        <header>
+            <div class="header-content">
+                <img src="IMG-20250429-WA0120.jpg" alt="Logo UNAP" class="logo">
+                
+                <div class="title-container">
+                    <h1>UNIVERSIDAD NACIONAL DE LA AMAZONÍA PERUANA</h1>
+                    <h2>Presentación del Proyecto</h2>
+                </div>
+                
+                <img src="logo fisi.jpg" alt="Escudo UNAP" class="logo">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Presentación</a></li>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="funciones.html">Funciones</a></li>
+                    <li><a href="huesos.html">Tipos de Huesos</a></li>
+                    <li><a href="enfermedades.html">Enfermedades</a></li>
+                    <li><a href="fuentes.html">Fuentes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Información del Estudiante</h2>
+                <div class="presentacion-container">
+                    <div class="info-estudiante">
+                        <p><strong>Nombre:</strong> Cristopher Robin Gálvez Ramirez</p>
+                        <p><strong>Curso:</strong> Informática II</p>
+                        <p><strong>Docente:</strong> Pita Astengo Luis Honorato</p>
+                        <p><strong>Ciclo:</strong> 2</p>
+                    </div>
+                    
+                    <div class="proyecto-descripcion">
+                        <h3>Descripción del Proyecto</h3>
+                        <p>Este sitio web tiene como objetivo principal proporcionar información detallada sobre el sistema esquelético humano, sus componentes, funciones y las principales enfermedades que pueden afectarlo.</p>
+                        
+                        <h3>Objetivos Específicos</h3>
+                        <ul>
+                            <li>Describir la estructura del sistema esquelético</li>
+                            <li>Explicar las principales funciones del esqueleto</li>
+                            <li>Identificar los diferentes tipos de huesos</li>
+                            <li>Analizar las enfermedades más comunes del sistema óseo</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Proyecto Sistema Esquelético. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
